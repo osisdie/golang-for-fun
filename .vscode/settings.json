@@ -1,0 +1,11 @@
+{
+    "testExplorer.go.testFramework": "go",
+    "testExplorer.go.testArguments": [
+        "-v",
+        "-count=1"
+    ],
+    "go.toolsEnvVars": {
+        "PATH": "/mnt/c/writable/go/bin:/home/kevinwu/go/bin:${env:PATH}"
+    },
+    "go.toolsGopath": "/home/kevinwu/go/bin"
+}
