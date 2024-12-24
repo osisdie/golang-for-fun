@@ -96,7 +96,7 @@ Before you begin, ensure you have met the following requirements:
 
 ---
 
-### **Set Up a Go Workspace**
+## **Run**
 
 1. **Navigate to your workspace directory**:
      ```bash
@@ -128,21 +128,47 @@ Before you begin, ensure you have met the following requirements:
 
 ---
 
-### **Testing**
+## **Testing**
 
 1. **Test the Module**:
    - Test specific module path:
      ```bash
-     go test example.com/app/printrange -count=1
+     go test example.com/app/printrange -count=1 -v
      ```
 
    - Test specific all files:
      ```bash
-     go test ./... -count=1
+     go test ./... -count=1 -v
      ```
 
    You will see the output:
    ```
    ?       example.com/app [no test files]
-   ok      example.com/app/printrange      0.005s
+   === RUN   TestPrintRangeNumbers
+   === RUN   TestPrintRangeNumbers/_
+   === RUN   TestPrintRangeNumbers/,_
+   === RUN   TestPrintRangeNumbers/_|_
+   --- PASS: TestPrintRangeNumbers (0.00s)
+      --- PASS: TestPrintRangeNumbers/_ (0.00s)
+      --- PASS: TestPrintRangeNumbers/,_ (0.00s)
+      --- PASS: TestPrintRangeNumbers/_|_ (0.00s)
+   PASS
+   ok      example.com/app/printrange      0.004s
    ```
+
+---
+
+## **Distribute Program**
+
+1. **Compiles the Go application into an executable binary**:
+   - Compiles the Go application into an executable binary named `app`
+   ```bash
+   go build -o app .
+   ```
+
+2. **Console run the binary app**:
+   ```bash
+   ./app
+   ```
+
+   You will see the same output like above.

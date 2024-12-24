@@ -1,0 +1,10 @@
+# Ignore Go build files
+*.exe
+*.test
+
+# Ignore IDE files
+.idea/
+*.iml
+
+# Ignore logs
+*.log
