@@ -133,12 +133,13 @@ Before you begin, ensure you have met the following requirements:
 1. **Test the Module**:
    - Test specific module path:
      ```bash
-     go test example.com/app/printrange -count=1 -v
+     go test example.com/app/printrange
      ```
 
    - Test specific all files:
      ```bash
-     go test ./... -count=1 -v
+     go test ./... -count=1 # the cache is bypassed
+     go test ./... -count=1 -v # -v with verbose
      ```
 
    You will see the output:
