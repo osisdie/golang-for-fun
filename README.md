@@ -1,4 +1,4 @@
-# golan-for-fun
+# golang-for-fun
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Go](https://img.shields.io/badge/Go-1.23.4-blue.svg)](https://golang.org)
