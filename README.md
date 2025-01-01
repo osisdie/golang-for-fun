@@ -5,7 +5,7 @@
 
 An simple testing project that tested in vscode.
 
----
+<br>
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ Before you begin, ensure you have met the following requirements:
 - **Go**: Version 1.23 or higher.
 - **Docker** (optional): For containerized builds and deployments.
 
----
+<br>
 
 ## Folder Structure
 
@@ -27,7 +27,7 @@ Before you begin, ensure you have met the following requirements:
         └── printrange_test.go
 ```
 
----
+<br>
 
 ## Installation
 
@@ -35,62 +35,62 @@ Before you begin, ensure you have met the following requirements:
 
 1. **Update and Upgrade Packages**:
 
-   ```bash
+   ```sh
    sudo apt update && sudo apt upgrade -y
    ```
 
 2. **Install Go**:
    - Download the latest version of Go:
-     ```bash
+     ```sh
      wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz
      ```
    - Extract the downloaded file:
-     ```bash
+     ```sh
      sudo tar -C /usr/local -xzf go1.23.4.linux-amd64.tar.gz
      ```
 
 3. **Set Up Environment Variables**:
    - Open your shell configuration file (e.g., `.bashrc`, `.zshrc`, or `.profile`):
-     ```bash
+     ```sh
      nano ~/.bashrc
      ```
    - Add the following lines to the file:
-     ```bash
+     ```sh
      export PATH=$PATH:/usr/local/go/bin
      export GOPATH=$HOME/go
      export PATH=$PATH:$GOPATH/bin
      ```
    - Save the file and reload the configuration:
-     ```bash
+     ```sh
      source ~/.bashrc
      ```
 
 4. **Verify the Installation**:
    Check the Go version to ensure it’s installed correctly:
-   ```bash
+   ```sh
    go version
    # go version go1.23.4 linux/amd64
    ```
 
----
+<br>
 
 ### **Install Additional Tools**
 
 1. **Install `goimports`**:
    `goimports` is a tool for formatting Go code and managing imports:
-   ```bash
+   ```sh
    go install golang.org/x/tools/cmd/goimports@latest
    ```
 
 2. **Install `gopls`**:
    `gopls` is the official Go language server for IDE integration:
-   ```bash
+   ```sh
    go install golang.org/x/tools/gopls@latest
    ```
 
 3. **Install `go-outline`**:
    `go-outline` is an utility to extract JSON representation of declarations from a Go source file:
-  ```bash
+  ```sh
   go install github.com/ramya-rao-a/go-outline@latest
   ```
 
@@ -99,24 +99,24 @@ Before you begin, ensure you have met the following requirements:
 ## **Run**
 
 1. **Navigate to your workspace directory**:
-     ```bash
+     ```sh
      cd src/
      ```
 
 2. **Create a New Go Module**:
    - Initialize a new Go module:
-     ```bash
+     ```sh
      go mod init example.com/app
      ```
 
 3. **Build and Run the Module**:
    - Save the file and run it:
-     ```bash
+     ```sh
      go run app.go
      ```
 
 4. **This should also work**:
-    ```bash
+    ```sh
     go run example.com/app
     ```
 
@@ -126,18 +126,18 @@ Before you begin, ensure you have met the following requirements:
    # ...
    ```
 
----
+<br>
 
 ## **Testing**
 
 1. **Test the Module**:
    - Test specific module path:
-     ```bash
+     ```sh
      go test example.com/app/printrange
      ```
 
    - Test specific all files:
-     ```bash
+     ```sh
      go test ./... -count=1 # the cache is bypassed
      go test ./... -count=1 -v # -v with verbose
      ```
@@ -157,19 +157,28 @@ Before you begin, ensure you have met the following requirements:
    ok      example.com/app/printrange      0.004s
    ```
 
----
+<br>
 
-## **Distribute Program**
+## **Run the Program**
 
 1. **Compiles the Go application into an executable binary**:
    - Compiles the Go application into an executable binary named `app`
-   ```bash
+   ```sh
    go build -o app .
    ```
 
 2. **Console run the binary app**:
-   ```bash
+   ```sh
    ./app
    ```
 
    You will see the same output like above.
+
+<br>
+<br>
+
+---
+
+**Enjoy this golang_for_fun project!**
+
+---
