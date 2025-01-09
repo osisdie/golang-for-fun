@@ -1,0 +1,15 @@
+goos: linux
+goarch: amd64
+cpu: AMD Ryzen 9 PRO 6950HS with Radeon Graphics
+BenchmarkFactorical_Recursive-16    	38387614	        30.94 ns/op
+BenchmarkFactorical_Recursive-16    	40750678	        31.48 ns/op
+BenchmarkFactorical_Recursive-16    	38009438	        31.09 ns/op
+BenchmarkFactorical_Recursive-16    	37729849	        30.87 ns/op
+BenchmarkFactorical_Recursive-16    	38332272	        31.66 ns/op
+BenchmarkFactorical-16              	122898998	         9.437 ns/op
+BenchmarkFactorical-16              	126576758	         9.453 ns/op
+BenchmarkFactorical-16              	127347250	         9.441 ns/op
+BenchmarkFactorical-16              	123561469	         9.373 ns/op
+BenchmarkFactorical-16              	127780272	         9.800 ns/op
+PASS
+ok  	command-line-arguments	17.031s

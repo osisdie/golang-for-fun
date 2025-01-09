@@ -1,4 +1,4 @@
-package codechallenge
+package hackerank
 
 import (
 	"strconv"
